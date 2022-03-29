@@ -1,0 +1,63 @@
+.advantages {
+  padding: 0 10px;
+  margin: 70px 0 0 0;
+
+  &__block {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    background-color: $advantages-background;
+    border-radius: 20px;
+  }
+
+  &__name {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: $advantagesOpacityBlack;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 12px 0 0 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    color: #111111;
+  }
+
+  &__text {
+    padding: 0;
+    margin: 50px 0 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $advantagesOpacityBlack;
+  }
+
+  &__controls {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__controls-point {
+    width: 4px;
+    height: 4px;
+    background: #212121;
+    border-radius: 50%;
+    margin-right: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
