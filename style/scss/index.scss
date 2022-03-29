@@ -1,5 +1,10 @@
+//Vendor
 @import "../../vendor/normalize.min";
 @import "../../vendor/fonts/font.min";
 
+//Variables
+@import "variables";
+
 //Blocks
 @import "blocks/page";
+@import "blocks/header";
