@@ -28,3 +28,18 @@ function showBlockCase(index) {
   dotsCase[index].classList.add('case__controls-point_active');
 }
 
+let dotsMoreAdvantages = document.querySelectorAll(".more-advantages__controls-point");
+let blocksMoreAdvantages = document.querySelectorAll(".more-advantages__block");
+
+dotsMoreAdvantages.forEach((dot, index) => {
+  dot.addEventListener('click', () => showBlockAdv(index));
+});
+
+function showBlockAdv(index) {
+  blocksMoreAdvantages.forEach(block => block.classList.remove('more-advantages__block_active'));
+  dotsMoreAdvantages.forEach(dot => dot.classList.remove('more-advantages__controls-point_active'));
+  blocksMoreAdvantages[index].classList.add('more-advantages__block_active');
+  dotsMoreAdvantages[index].classList.add('more-advantages__controls-point_active');
+}
+
+
