@@ -32,10 +32,10 @@ let dotsMoreAdvantages = document.querySelectorAll(".more-advantages__controls-p
 let blocksMoreAdvantages = document.querySelectorAll(".more-advantages__block");
 
 dotsMoreAdvantages.forEach((dot, index) => {
-  dot.addEventListener('click', () => showBlockAdv(index));
+  dot.addEventListener('click', () => showBlockMoreAdv(index));
 });
 
-function showBlockAdv(index) {
+function showBlockMoreAdv(index) {
   blocksMoreAdvantages.forEach(block => block.classList.remove('more-advantages__block_active'));
   dotsMoreAdvantages.forEach(dot => dot.classList.remove('more-advantages__controls-point_active'));
   blocksMoreAdvantages[index].classList.add('more-advantages__block_active');

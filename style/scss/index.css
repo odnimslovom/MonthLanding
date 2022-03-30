@@ -278,6 +278,7 @@ summary {
   padding: 20px;
   background-color: #F8f8f8;
   border-radius: 20px;
+  min-height: 284px;
 }
 .advantages__block_active {
   display: block;
@@ -400,6 +401,7 @@ summary {
   padding: 20px;
   background-color: #F8f8f8;
   border-radius: 20px;
+  min-height: 284px;
 }
 .more-advantages__block_active {
   display: block;
@@ -452,6 +454,19 @@ summary {
 }
 .more-advantages__controls-point:hover {
   cursor: pointer;
+}
+
+.phrase {
+  padding: 0 30px;
+  margin: 70px 0 0 0;
+}
+.phrase__title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: #111111;
 }
 
 /*# sourceMappingURL=index.css.map */
