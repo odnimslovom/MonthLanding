@@ -3,6 +3,10 @@
   margin: 70px 0 0 0;
 
   &__block {
+    &_active {
+      display: block;
+    }
+    display: none;
     box-sizing: border-box;
     width: 100%;
     padding: 20px;
@@ -48,11 +52,15 @@
   }
 
   &__controls-point {
+    &_active {
+      background: #212121;
+    }
     width: 4px;
     height: 4px;
-    background: #212121;
+    background: #D9D9D9;
     border-radius: 50%;
     margin-right: 4px;
+    margin-bottom: 100px;
     &:last-child {
       margin-right: 0;
     }

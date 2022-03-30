@@ -163,6 +163,19 @@ summary {
   font-weight: 700;
   font-style: normal;
 }
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .page {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   min-width: 320px;
@@ -257,11 +270,15 @@ summary {
   margin: 70px 0 0 0;
 }
 .advantages__block {
+  display: none;
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
   background-color: #F8f8f8;
   border-radius: 20px;
+}
+.advantages__block_active {
+  display: block;
 }
 .advantages__name {
   padding: 0;
@@ -299,9 +316,13 @@ summary {
 .advantages__controls-point {
   width: 4px;
   height: 4px;
-  background: #212121;
+  background: #D9D9D9;
   border-radius: 50%;
   margin-right: 4px;
+  margin-bottom: 100px;
+}
+.advantages__controls-point_active {
+  background: #212121;
 }
 .advantages__controls-point:last-child {
   margin-right: 0;
