@@ -1,5 +1,6 @@
 "use strict";
 
+
 let dotsAdvantages = document.querySelectorAll(".advantages__controls-point");
 let blocksAdvantages = document.querySelectorAll(".advantages__block");
 
