@@ -144,22 +144,19 @@ summary {
 
 @font-face {
   font-family: "Inter";
-  src: url(Inter-Regular.eot);
-  src: local("Inter Regular"), local("Inter-Regular"), url(Inter-Regular.eot?#iefix) format("embedded-opentype"), url(Inter-Regular.woff2) format("woff2"), url(Inter-Regular.woff) format("woff"), url(Inter-Regular.ttf) format("truetype");
+  src: url(../../vendor/fonts/Inter-Regular.eot), url(../../vendor/fonts/Inter-Regular.woff), url(../../vendor/fonts/Inter-Regular.ttf), url(../../vendor/fonts/Inter-Regular.woff2);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url(Inter-SemiBold.eot);
-  src: local("Inter Semi Bold"), local("Inter-SemiBold"), url(Inter-SemiBold.eot?#iefix) format("embedded-opentype"), url(Inter-SemiBold.woff2) format("woff2"), url(Inter-SemiBold.woff) format("woff"), url(Inter-SemiBold.ttf) format("truetype");
+  src: url(../../vendor/fonts/Inter-SemiBold.eot), url(../../vendor/fonts/Inter-SemiBold.woff), url(../../vendor/fonts/Inter-SemiBold.ttf), url(../../vendor/fonts/Inter-SemiBold.woff2);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url(Inter-Bold.eot);
-  src: local("Inter Bold"), local("Inter-Bold"), url(Inter-Bold.eot?#iefix) format("embedded-opentype"), url(Inter-Bold.woff2) format("woff2"), url(Inter-Bold.woff) format("woff"), url(Inter-Bold.ttf) format("truetype");
+  src: url(../../vendor/fonts/Inter-Bold.eot), url(../../vendor/fonts/Inter-Bold.woff), url(../../vendor/fonts/Inter-Bold.ttf), url(../../vendor/fonts/Inter-Bold.woff2);
   font-weight: 700;
   font-style: normal;
 }
@@ -539,6 +536,52 @@ summary {
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 10px 10px 10px;
+  padding: 20px;
+  background: #222222;
+  border-radius: 20px;
+}
+.footer__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.footer__subtitle {
+  padding: 0;
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer__button {
+  margin-top: 95px;
+  width: 260px;
+  height: 44px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+}
+.footer__button:hover {
+  cursor: pointer;
+  opacity: 0.93;
+  border-radius: 8px;
+  transition: opacity 0.6s ease-in;
 }
 
 /*# sourceMappingURL=index.css.map */
