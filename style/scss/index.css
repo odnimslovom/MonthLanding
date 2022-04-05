@@ -241,9 +241,15 @@ summary {
   background: #fff;
   color: #222;
 }
+.button_color_white:hover {
+  opacity: 0.93;
+}
 .button_color_black {
   background: #222;
   color: #fff;
+}
+.button_color_black:hover {
+  opacity: 0.85;
 }
 
 .slider__block {
@@ -252,6 +258,14 @@ summary {
 }
 .slider__block_active {
   display: block;
+}
+.slider__block-img {
+  width: 266px;
+  height: 522px;
+  margin: auto;
+  display: block;
+  filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
+  border-radius: 30px;
 }
 .slider__block-name {
   margin: 0;
@@ -322,8 +336,6 @@ summary {
 }
 .header__logo:hover {
   cursor: pointer;
-  opacity: 0.93;
-  transform: scale(1.01);
   transition: all 0.6s linear;
 }
 .header__title {
@@ -348,8 +360,6 @@ summary {
 }
 .header__button:hover {
   cursor: pointer;
-  opacity: 0.93;
-  transform: scale(1.01);
   transition: all 0.6s linear;
 }
 
@@ -365,167 +375,34 @@ summary {
 }
 
 .case {
-  padding: 0 20px;
-  margin: 70px 0 0 0;
-}
-.case__title {
-  padding: 0;
-  margin: 0;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  color: #111111;
-}
-.case__slider {
+  box-sizing: border-box;
   margin-top: 70px;
-  display: flex;
-}
-.case__slider-block {
-  width: 100%;
-  height: 522px;
-  display: none;
-  position: relative;
-}
-.case__slider-block_active {
-  display: block;
-}
-.case__slider-image {
-  margin: auto;
-  display: block;
-  width: 266px;
-  height: 522px;
-  filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
-  border-radius: 30px;
-}
-.case__controls {
-  margin: 20px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.case__controls-point {
-  width: 4px;
-  height: 4px;
-  background: #D9D9D9;
-  border-radius: 50%;
-  margin-right: 4px;
-}
-.case__controls-point_active {
-  background: #212121;
-}
-.case__controls-point:last-child {
-  margin-right: 0;
-}
-.case__controls-point:hover {
-  cursor: pointer;
 }
 
 .more-advantages {
-  margin: 70px 0 0 0;
-}
-.more-advantages__block {
-  display: none;
+  margin-top: 70px;
   box-sizing: border-box;
-  width: 100%;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 20px;
-  min-height: 284px;
-}
-.more-advantages__block_active {
-  display: block;
-}
-.more-advantages__name {
-  padding: 0;
-  margin: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: rgba(17, 17, 17, 0.6);
-}
-.more-advantages__title {
-  padding: 0;
-  margin: 12px 0 0 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  color: #111111;
-}
-.more-advantages__text {
-  padding: 0;
-  margin: 50px 0 0 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  color: rgba(17, 17, 17, 0.6);
-}
-.more-advantages__controls {
-  margin: 20px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.more-advantages__controls-point {
-  width: 4px;
-  height: 4px;
-  background: #D9D9D9;
-  border-radius: 50%;
-  margin-right: 4px;
-}
-.more-advantages__controls-point_active {
-  background: #212121;
-}
-.more-advantages__controls-point:last-child {
-  margin-right: 0;
-}
-.more-advantages__controls-point:hover {
-  cursor: pointer;
 }
 
-.phrase {
-  padding: 0 30px;
-  margin: 70px 0 0 0;
+.message {
+  margin-top: 70px;
+  padding: 0 20px;
 }
-.phrase__title {
-  padding: 0;
-  margin: 0;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  color: #111111;
+.message__title {
+  margin-top: 0;
 }
 
 .connect {
+  box-sizing: border-box;
   margin-top: 70px;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #F8F8F8;
-  border-radius: 10px;
 }
 .connect__title {
   margin-top: 20px;
-  margin-bottom: 0;
-  padding: 0;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
   text-align: center;
-  color: #111111;
 }
 .connect__subtitle {
   margin-top: 20px;
-  margin-bottom: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
   text-align: center;
-  color: rgba(17, 17, 17, 0.6);
 }
 .connect__form {
   margin-top: 80px;
@@ -534,20 +411,20 @@ summary {
   align-items: center;
 }
 .connect__form-item {
-  outline-color: #E4E4E4;
-  outline-width: 1px;
   box-sizing: border-box;
-  padding: 15px 20px;
-  margin-bottom: 20px;
   width: 260px;
   height: 54px;
-  background: #FFFFFF;
-  border: none;
-  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
-  color: #111111;
+  color: #111;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  outline-color: #e4e4e4;
+  outline-width: 1px;
 }
 .connect__form-item_type_textarea {
   height: 130px;
@@ -562,62 +439,33 @@ summary {
 .connect__button {
   width: 260px;
   height: 44px;
-  background: #222222;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  color: #FFFFFF;
   margin-bottom: 20px;
+}
+.connect__button:hover {
+  cursor: pointer;
+  transition: all 0.6s linear;
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
   margin-top: 70px;
-  padding: 20px;
-  background: #222222;
-  border-radius: 20px;
 }
 .footer__title {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #FFFFFF;
+  margin-top: 0;
   align-self: flex-start;
 }
 .footer__subtitle {
-  align-self: flex-start;
-  padding: 0;
   margin-top: 14px;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(255, 255, 255, 0.7);
+  align-self: flex-start;
 }
 .footer__button {
   margin-top: 95px;
   width: 260px;
   height: 44px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  border: none;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  color: #222222;
 }
 .footer__button:hover {
   cursor: pointer;
-  opacity: 0.93;
-  border-radius: 8px;
-  transition: opacity 0.6s ease-in;
+  transition: all 0.6s linear;
 }
 
 /*# sourceMappingURL=index.css.map */

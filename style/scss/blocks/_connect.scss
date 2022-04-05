@@ -1,32 +1,15 @@
 .connect {
+  box-sizing: border-box;
   margin-top: 70px;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #F8F8F8;
-  border-radius: 10px;
 
   &__title {
     margin-top: 20px;
-    margin-bottom: 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 31px;
     text-align: center;
-    color: #111111;
   }
 
   &__subtitle {
     margin-top: 20px;
-    margin-bottom: 0;
-    padding: 0;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
     text-align: center;
-    color: rgba(17, 17, 17, 0.6);
   }
 
   &__form {
@@ -37,28 +20,30 @@
   }
 
   &__form-item {
-    outline-color: #E4E4E4;
-    outline-width: 1px;
     box-sizing: border-box;
-    padding: 15px 20px;
-    margin-bottom: 20px;
     width: 260px;
     height: 54px;
-    background: #FFFFFF;
-    border: none;
-    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-    color: #111111;
+    color: #111;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    outline-color: #e4e4e4;
+    outline-width: 1px;
 
     &_type_textarea {
       height: 130px;
       margin-bottom: 50px;
     }
-    &::-webkit-input-placeholder{
+
+    &::-webkit-input-placeholder {
       color: rgba(17, 17, 17, 0.3);
     }
+
     &:focus::-webkit-input-placeholder {
       color: transparent;
     }
@@ -67,13 +52,10 @@
   &__button {
     width: 260px;
     height: 44px;
-    background: #222222;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
     margin-bottom: 20px;
+
+    &:hover {
+      @include hover-effects;
+    }
   }
 }

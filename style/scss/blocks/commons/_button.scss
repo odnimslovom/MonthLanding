@@ -9,10 +9,18 @@
   &_color_white {
     background: #fff;
     color: #222;
+
+    &:hover {
+      opacity: .93;
+    }
   }
 
   &_color_black {
     background: #222;
     color: #fff;
+
+    &:hover {
+      opacity: .85;
+    }
   }
 }
