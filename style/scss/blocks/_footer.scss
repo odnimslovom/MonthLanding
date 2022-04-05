@@ -21,4 +21,8 @@
       @include hover-effects;
     }
   }
+
+  &__img {
+    display: none;
+  }
 }

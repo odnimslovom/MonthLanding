@@ -192,6 +192,11 @@ summary {
 .bg-block_type_black {
   background-color: #222;
 }
+@media screen and (min-width: 768px) {
+  .bg-block_type_black {
+    padding: 50px;
+  }
+}
 .bg-block_type_white {
   background-color: #f8f8f8;
 }
@@ -327,6 +332,12 @@ summary {
   width: 100%;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 602px;
+    position: relative;
+  }
+}
 .header__logo {
   width: 40px;
   height: 40px;
@@ -338,11 +349,31 @@ summary {
   cursor: pointer;
   transition: all 0.6s linear;
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+}
 .header__title {
-  margin-top: 50px;
+  margin-top: 120px;
+  align-self: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .header__title {
+    max-width: 360px;
+  }
 }
 .header__subtitle {
   margin-top: 14px;
+  align-self: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .header__subtitle {
+    max-width: 360px;
+    margin-top: 20px;
+  }
 }
 .header__image {
   width: 266px;
@@ -353,6 +384,13 @@ summary {
   filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
   border-radius: 30px;
 }
+@media screen and (min-width: 768px) {
+  .header__image {
+    position: absolute;
+    right: 45px;
+    bottom: -20px;
+  }
+}
 .header__button {
   width: 260px;
   height: 44px;
@@ -361,6 +399,12 @@ summary {
 .header__button:hover {
   cursor: pointer;
   transition: all 0.6s linear;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    align-self: flex-start;
+    margin-top: 250px;
+  }
 }
 
 .content {
@@ -429,6 +473,7 @@ summary {
 .connect__form-item_type_textarea {
   height: 130px;
   margin-bottom: 50px;
+  resize: none;
 }
 .connect__form-item::-webkit-input-placeholder {
   color: rgba(17, 17, 17, 0.3);
@@ -466,6 +511,9 @@ summary {
 .footer__button:hover {
   cursor: pointer;
   transition: all 0.6s linear;
+}
+.footer__img {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
