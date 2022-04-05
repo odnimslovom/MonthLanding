@@ -150,6 +150,12 @@ summary {
 }
 @font-face {
   font-family: "Inter";
+  src: url(../../vendor/fonts/Inter-Medium.eot), url(../../vendor/fonts/Inter-Medium.woff), url(../../vendor/fonts/Inter-Medium.ttf), url(../../vendor/fonts/Inter-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
   src: url(../../vendor/fonts/Inter-SemiBold.eot), url(../../vendor/fonts/Inter-SemiBold.woff), url(../../vendor/fonts/Inter-SemiBold.ttf), url(../../vendor/fonts/Inter-SemiBold.woff2);
   font-weight: 600;
   font-style: normal;
@@ -240,6 +246,54 @@ summary {
   color: #fff;
 }
 
+.slider__block {
+  min-height: 284px;
+  display: none;
+}
+.slider__block_active {
+  display: block;
+}
+.slider__block-name {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(17, 17, 17, 0.6);
+}
+.slider__block-title {
+  margin-top: 12px;
+}
+.slider__block-text {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(17, 17, 17, 0.6);
+}
+.slider__controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.slider__controls-dot {
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+.slider__controls-dot:last-child {
+  margin-right: 0;
+}
+.slider__controls-dot:hover {
+  cursor: pointer;
+}
+.slider__controls-dot_active {
+  background: #212121;
+}
+
 .page {
   box-sizing: border-box;
   min-width: 320px;
@@ -306,69 +360,8 @@ summary {
 }
 
 .advantages {
-  margin: 70px 0 0 0;
   box-sizing: border-box;
-}
-.advantages__block {
-  display: none;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 20px;
-  min-height: 284px;
-}
-.advantages__block_active {
-  display: block;
-}
-.advantages__name {
-  padding: 0;
-  margin: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: rgba(17, 17, 17, 0.6);
-}
-.advantages__title {
-  padding: 0;
-  margin: 12px 0 0 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  color: #111111;
-}
-.advantages__text {
-  padding: 0;
-  margin: 50px 0 0 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  color: rgba(17, 17, 17, 0.6);
-}
-.advantages__controls {
-  margin: 20px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.advantages__controls-point {
-  width: 4px;
-  height: 4px;
-  background: #D9D9D9;
-  border-radius: 50%;
-  margin-right: 4px;
-}
-.advantages__controls-point_active {
-  background: #212121;
-}
-.advantages__controls-point:last-child {
-  margin-right: 0;
-}
-.advantages__controls-point:hover {
-  cursor: pointer;
+  margin-top: 70px;
 }
 
 .case {

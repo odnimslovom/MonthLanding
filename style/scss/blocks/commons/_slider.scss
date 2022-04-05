@@ -1,0 +1,61 @@
+.slider {
+
+  &__block {
+    min-height: 284px;
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__block-name {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &__block-title{
+    margin-top: 12px;
+  }
+
+  &__block-text {
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &__controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    &-dot {
+      width: 4px;
+      height: 4px;
+      margin-right: 4px;
+      background: #d9d9d9;
+      border-radius: 50%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &_active {
+        background: #212121;
+      }
+    }
+  }
+
+
+}
