@@ -1,0 +1,17 @@
+.subtitle {
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+
+  &_fs12 {
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &_fs15 {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(17, 17, 17, 0.6);
+  }
+}

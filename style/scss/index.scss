@@ -5,8 +5,17 @@
 //Variables
 @import "variables";
 
+//Mixins
+@import "mixins/hover-effects";
+
 //Animations
 @import "animations/fade";
+
+//Commons blocks
+@import "blocks/commons/bg-block";
+@import "blocks/commons/title";
+@import "blocks/commons/subtitle";
+@import "blocks/commons/button";
 
 //Blocks
 @import "blocks/page";
@@ -18,3 +27,4 @@
 @import "blocks/phrase";
 @import "blocks/connect";
 @import "blocks/footer";
+

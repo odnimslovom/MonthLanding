@@ -173,11 +173,80 @@ summary {
     opacity: 1;
   }
 }
+.bg-block {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.bg-block_type_black {
+  background-color: #222;
+}
+.bg-block_type_white {
+  background-color: #f8f8f8;
+}
+
+.title {
+  padding: 0;
+  margin-bottom: 0;
+}
+.title_fs24 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+}
+.title_fs26 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: #111;
+}
+
+.subtitle {
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.subtitle_fs12 {
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.subtitle_fs15 {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.button {
+  padding: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+.button_color_white {
+  background: #fff;
+  color: #222;
+}
+.button_color_black {
+  background: #222;
+  color: #fff;
+}
+
 .page {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
   min-width: 320px;
   max-width: 1440px;
   margin: auto;
+  padding: 10px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -188,73 +257,45 @@ summary {
 
 .header {
   width: 100%;
-  display: flex;
-  margin: auto;
-  padding: 10px;
   color: #fff;
-  box-sizing: border-box;
-}
-.header__back {
-  padding: 20px;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #222;
-  border-radius: 20px;
 }
 .header__logo {
-  display: block;
   width: 40px;
   height: 40px;
+  display: block;
   object-fit: cover;
   align-self: flex-start;
 }
 .header__logo:hover {
   cursor: pointer;
   opacity: 0.93;
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: all 0.6s linear;
 }
 .header__title {
-  padding: 0;
-  margin: 50px 0 0 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #fff;
+  margin-top: 50px;
 }
 .header__subtitle {
-  padding: 0;
-  margin: 14px 0 0 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  opacity: 0.7;
+  margin-top: 14px;
 }
 .header__image {
+  width: 266px;
+  height: 522px;
   padding: 0;
   margin: 50px 0 0 0;
   display: block;
-  width: 266px;
-  height: 522px;
   filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
   border-radius: 30px;
 }
 .header__button {
-  padding: 0;
-  margin: 50px 0 0 0;
   width: 260px;
   height: 44px;
-  background: #fff;
-  border-radius: 8px;
+  margin-top: 50px;
 }
 .header__button:hover {
   cursor: pointer;
   opacity: 0.93;
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: all 0.6s linear;
 }
 
@@ -262,20 +303,18 @@ summary {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 10px;
 }
 
 .advantages {
   margin: 70px 0 0 0;
   box-sizing: border-box;
-  padding: 20px;
 }
 .advantages__block {
   display: none;
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
-  background-color: #F8f8f8;
+  background-color: #f8f8f8;
   border-radius: 20px;
   min-height: 284px;
 }
@@ -389,7 +428,6 @@ summary {
 }
 
 .more-advantages {
-  padding: 0 10px;
   margin: 70px 0 0 0;
 }
 .more-advantages__block {
@@ -397,7 +435,7 @@ summary {
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
-  background-color: #F8f8f8;
+  background-color: #f8f8f8;
   border-radius: 20px;
   min-height: 284px;
 }
@@ -516,11 +554,14 @@ summary {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
-  color: rgba(17, 17, 17, 0.3);
+  color: #111111;
 }
 .connect__form-item_type_textarea {
   height: 130px;
   margin-bottom: 50px;
+}
+.connect__form-item::-webkit-input-placeholder {
+  color: rgba(17, 17, 17, 0.3);
 }
 .connect__form-item:focus::-webkit-input-placeholder {
   color: transparent;
@@ -542,7 +583,7 @@ summary {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 70px 10px 10px 10px;
+  margin-top: 70px;
   padding: 20px;
   background: #222222;
   border-radius: 20px;
@@ -554,8 +595,10 @@ summary {
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
+  align-self: flex-start;
 }
 .footer__subtitle {
+  align-self: flex-start;
   padding: 0;
   margin-top: 14px;
   margin-bottom: 0;
