@@ -8,15 +8,38 @@
   align-items: center;
   border-radius: 20px;
 
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
   &_type_black {
     background-color: #222;
-    @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 768px) {
       padding: 50px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 60px 160px;
     }
   }
 
   &_type_white {
     background-color: #f8f8f8;
+    min-width: 300px;
+    min-height: 284px;
+
+
+    @media screen and (min-width: 768px) {
+      min-width: 349px;
+      padding: 30px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      min-width: 540px;
+      min-height: 308px;
+      padding: 40px;
+    }
   }
 
 }
