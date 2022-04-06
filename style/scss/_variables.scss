@@ -1,6 +1,20 @@
-$page-background: #e5e5e5;
-$black-background: #222;
-$white: #fff;
+$white-text-color : #fff;
+$black-text-color : #111;
 
-$advantagesOpacityBlack: rgba(17, 17, 17, .6);
-$advantages-background: #f8f8f8;
+$dark-block-color : #222;
+$light-block-color: #f8f8f8;
+
+$dark-button-bg: #222;
+$dark-button-text: #fff;
+
+$light-button-bg: #fff;
+$light-button-text: #222;
+
+$slider-text-color: rgba(17, 17, 17, 0.6);
+$slider-dot-color: #d9d9d9;
+$slider-active-dot-color: #212121;
+
+$form-text-color: $black-text-color;
+$form-input-bg-color : #fff;
+$form-input-outline-color : #e4e4e4;
+$form-input-placeholder-color : rgba(17, 17, 17, 0.3);

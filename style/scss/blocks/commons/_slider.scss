@@ -2,9 +2,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered-flex;
   }
 
   &__block {
@@ -47,7 +45,8 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: rgba(17, 17, 17, 0.6);
+    color: $slider-text-color;
+
     @media screen and (min-width: 1440px) {
       font-size: 18px;
     }
@@ -58,6 +57,8 @@
 
     @media screen and (min-width: 768px) {
       min-height: 93px;
+      font-size: 26px;
+      line-height: 31px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -74,7 +75,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    color: rgba(17, 17, 17, 0.6);
+    color: $slider-text-color;
 
     @media screen and (min-width: 768px) {
       margin-top: 20px;
@@ -91,8 +92,7 @@
 
   &__controls {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    @include centered-flex;
 
     @media screen and (min-width: 768px) {
       display: none;
@@ -102,7 +102,7 @@
       width: 4px;
       height: 4px;
       margin-right: 4px;
-      background: #d9d9d9;
+      background: $slider-dot-color;
       border-radius: 50%;
 
       &:last-child {
@@ -114,7 +114,7 @@
       }
 
       &_active {
-        background: #212121;
+        background: $slider-active-dot-color;
       }
     }
   }

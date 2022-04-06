@@ -2,17 +2,27 @@
   padding: 0;
   margin-bottom: 0;
 
-  &_fs24 {
+  &_white {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: #fff;
+    color: $white-text-color;
   }
 
-  &_fs26 {
+  &_black {
     font-weight: 600;
     font-size: 26px;
     line-height: 31px;
-    color: #111;
+    color: $black-text-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 60px;
+    line-height: 68px;
   }
 }

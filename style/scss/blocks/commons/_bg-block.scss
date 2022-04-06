@@ -13,7 +13,7 @@
   }
 
   &_type_black {
-    background-color: #222;
+    background-color: $dark-block-color;
 
     @media screen and (min-width: 768px) {
       padding: 50px;
@@ -25,10 +25,9 @@
   }
 
   &_type_white {
-    background-color: #f8f8f8;
+    background-color: $light-block-color;
     min-width: 300px;
     min-height: 284px;
-
 
     @media screen and (min-width: 768px) {
       min-width: 349px;

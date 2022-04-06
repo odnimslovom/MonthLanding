@@ -6,13 +6,17 @@
   line-height: 24px;
   text-align: center;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     font-size: 14px;
   }
 
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+  }
+
   &_color_white {
-    background: #fff;
-    color: #222;
+    background: $light-button-bg;
+    color: $light-button-text;
 
     &:hover {
       opacity: .93;
@@ -20,8 +24,8 @@
   }
 
   &_color_black {
-    background: #222;
-    color: #fff;
+    background: $dark-button-bg;
+    color: $dark-button-text;
 
     &:hover {
       opacity: .85;
