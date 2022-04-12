@@ -2,26 +2,26 @@
   padding: 0;
   margin-bottom: 0;
 
-  &_white {
+  &_color_white {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: $white-text-color;
   }
 
-  &_black {
+  &_color_black {
     font-weight: 600;
     font-size: 26px;
     line-height: 31px;
     color: $black-text-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-resolution) {
     font-size: 33px;
     line-height: 37px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop-resolution) {
     font-size: 60px;
     line-height: 68px;
   }

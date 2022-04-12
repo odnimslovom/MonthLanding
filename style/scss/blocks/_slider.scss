@@ -1,6 +1,6 @@
 .slider {
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-resolution) {
     padding: 0 20px;
     @include centered-flex;
   }
@@ -8,7 +8,7 @@
   &__block {
     display: none;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-resolution) {
       display: block;
       max-width: 349px;
       margin: 0 5px;
@@ -28,12 +28,12 @@
     border-radius: 30px;
     justify-content: space-between;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-resolution) {
       width: 226px;
       height: 461px;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop-resolution) {
       width: 350px;
       height: 709px;
     }
@@ -47,7 +47,7 @@
     line-height: 20px;
     color: $slider-text-color;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop-resolution) {
       font-size: 18px;
     }
   }
@@ -55,13 +55,13 @@
   &__block-title {
     margin-top: 12px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-resolution) {
       min-height: 93px;
       font-size: 26px;
       line-height: 31px;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop-resolution) {
       min-height: 76px;
       margin-top: 20px;
       font-size: 32px;
@@ -77,11 +77,11 @@
     line-height: 20px;
     color: $slider-text-color;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-resolution) {
       margin-top: 20px;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop-resolution) {
       margin-top: 40px;
       font-size: 16px;
       line-height: 24px;
@@ -94,28 +94,8 @@
     margin-top: 20px;
     @include centered-flex;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-resolution) {
       display: none;
-    }
-
-    &-dot {
-      width: 4px;
-      height: 4px;
-      margin-right: 4px;
-      background: $slider-dot-color;
-      border-radius: 50%;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &_active {
-        background: $slider-active-dot-color;
-      }
     }
   }
 }

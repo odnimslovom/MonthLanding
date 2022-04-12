@@ -8,20 +8,12 @@
   align-items: center;
   border-radius: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-resolution) {
     margin: 0;
   }
 
   &_type_black {
     background-color: $dark-block-color;
-
-    @media screen and (min-width: 768px) {
-      padding: 50px;
-    }
-
-    @media screen and (min-width: 1440px) {
-      padding: 60px 160px;
-    }
   }
 
   &_type_white {
@@ -29,12 +21,12 @@
     min-width: 300px;
     min-height: 284px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-resolution) {
       min-width: 349px;
       padding: 30px;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: $desktop-resolution) {
       min-width: 540px;
       min-height: 308px;
       padding: 40px;
