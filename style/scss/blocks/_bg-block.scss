@@ -1,0 +1,36 @@
+.bg-block {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+
+  @media screen and (min-width: $tablet-resolution) {
+    margin: 0;
+  }
+
+  &_type_black {
+    background-color: $dark-block-color;
+  }
+
+  &_type_white {
+    background-color: $light-block-color;
+    min-width: 300px;
+    min-height: 284px;
+
+    @media screen and (min-width: $tablet-resolution) {
+      min-width: 349px;
+      padding: 30px;
+    }
+
+    @media screen and (min-width: $desktop-resolution) {
+      min-width: 540px;
+      min-height: 308px;
+      padding: 40px;
+    }
+  }
+
+}

@@ -1,5 +1,32 @@
+//Vendor
 @import "../../vendor/normalize.min";
 @import "../../vendor/fonts/font.min";
 
+//Variables
+@import "variables";
+
+//Mixins
+@import "mixins/hover-effects";
+@import "mixins/centered-flex";
+
+//Animations
+@import "animations/fade";
+
+//Commons blocks
+@import "blocks/bg-block";
+@import "blocks/title";
+@import "blocks/subtitle";
+@import "blocks/button";
+@import "blocks/slider";
+
 //Blocks
 @import "blocks/page";
+@import "blocks/header";
+@import "blocks/content";
+@import "blocks/advantages";
+@import "blocks/case";
+@import "blocks/more-advantages";
+@import "blocks/message";
+@import "blocks/connect";
+@import "blocks/footer";
+

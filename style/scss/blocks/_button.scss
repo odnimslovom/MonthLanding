@@ -1,0 +1,56 @@
+.button {
+  padding: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+
+  @media screen and (min-width: $tablet-resolution) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $desktop-resolution) {
+    font-size: 16px;
+  }
+
+  &_color_white {
+    background: $light-button-bg;
+    color: $light-button-text;
+
+    &:hover {
+      opacity: .93;
+    }
+  }
+
+  &_color_black {
+    background: $dark-button-bg;
+    color: $dark-button-text;
+
+    &:hover {
+      opacity: .85;
+    }
+  }
+
+  &_type_dot {
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin-right: 4px;
+    background: $slider-dot-color;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &_active {
+    background: $slider-active-dot-color;
+  }
+}

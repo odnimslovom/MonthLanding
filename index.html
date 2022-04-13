@@ -13,5 +13,101 @@
 
 <body class="page">
 
+<header class="header bg-block bg-block_type_black">
+  <a class="header__logo" href="#">
+    <img src="./images/icons/logo.svg" alt="DrawApp логотип с каракулей">
+  </a>
+  <h1 class="header__title title title_color_white">Не умеете рисовать? Не&nbsp;беда!</h1>
+  <p class="header__subtitle subtitle subtitle_color_white">С помощью нашего приложения вы можете чиркануть каляку и получить
+    шедевр.</p>
+  <a class="header__button button button_color_white" href="#">Подробнее</a>
+</header>
+
+<main class="content">
+
+  <section class="advantages slider">
+    <div class="slider__block slider__block_active bg-block bg-block_type_white fade">
+      <p class="slider__block-name">AI</p>
+      <h3 class="slider__block-title title title_color_black">Умный интелект приложения</h3>
+      <p class="slider__block-text">С помощью AI приложение анализирует картины мастеров&nbsp;
+        и современных практиков рисования, и&nbsp;достраивает картину за вас.</p>
+    </div>
+    <div class="slider__block bg-block bg-block_type_white fade">
+      <p class="slider__block-name">Ч/Б и Цвет</p>
+      <h3 class="slider__block-title title title_color_black">Рисуйте в любом стиле</h3>
+      <p class="slider__block-text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в
+        любой ситуации.</p>
+    </div>
+    <div class="slider__controls">
+      <button class="button button_type_dot button_active"></button>
+      <button class="button button_type_dot"></button>
+    </div>
+  </section>
+
+  <div class="message">
+    <h2 class="message__title title title_color_black">Чик-чирик и ваша каляка превращается в&nbsp;изумительное произведение
+      искусства.</h2>
+  </div>
+
+  <section class="case slider">
+    <div class="slider__block slider__block_active fade">
+      <img class="slider__block-img" src="./images/steps/step1.png" alt="Хаотичный набросок лица на экране смартфона">
+    </div>
+    <div class="slider__block fade">
+      <img class="slider__block-img" src="./images/steps/step2.png" alt="Неаккуратный рисунок лица на экране смартфона">
+    </div>
+    <div class="slider__block fade">
+      <img class="slider__block-img" src="./images/steps/step3.png" alt="Аккуратный рисунок лица на экране смартфона">
+    </div>
+    <div class="slider__controls">
+      <button class="button button_type_dot button_active"></button>
+      <button class="button button_type_dot"></button>
+      <button class="button button_type_dot"></button>
+    </div>
+  </section>
+
+  <section class="more-advantages slider">
+    <div class="slider__block slider__block_active bg-block bg-block_type_white fade">
+      <p class="slider__block-name">Быстро</p>
+      <h3 class="slider__block-title title title_color_black">Проблем с рисованием — нет</h3>
+      <p class="slider__block-text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и
+        многие другие...</p>
+    </div>
+    <div class="slider__block bg-block bg-block_type_white fade">
+      <p class="slider__block-name">Просто</p>
+      <h3 class="slider__block-title title title_color_black">Нарисовали, преобразовали, сохранили</h3>
+      <p class="slider__block-text">Раз, два, три, больше нечего тут рассказать.</p>
+    </div>
+    <div class="slider__controls">
+      <button class="button button_type_dot button_active"></button>
+      <button class="button button_type_dot"></button>
+    </div>
+  </section>
+
+  <div class="message">
+    <h2 class="message__title title title_color_black">Качайте приложение и&nbsp;улучшайте свои художества, а&nbsp;потом хвастайтесь
+      ими!</h2>
+  </div>
+
+  <section class="connect bg-block bg-block_type_white">
+    <h2 class="connect__title title title_color_black">Хотите нам что-то посоветовать?</h2>
+    <p class="connect__subtitle subtitle subtitle_color_black">Оставьте заявку и мы свяжемся с&nbsp;вами.</p>
+    <form class="connect__form" name="connect" action="#">
+      <input class="connect__form-item" name="name" type="text" placeholder="Ваше Имя" required>
+      <input class="connect__form-item" name="email" type="email" placeholder="Контактный Email" required>
+      <textarea class="connect__form-item connect__form-item_type_textarea" name="message"
+                placeholder="Сообщение" required></textarea>
+      <button type="submit" class="connect__button button button_color_black">Оставить заявку</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer bg-block bg-block_type_black">
+  <h2 class="footer__title title title_color_white">Хотите скачать приложение?</h2>
+  <p class="footer__subtitle subtitle subtitle_color_white">Качайте в ЭпСтор и ГуглПлэй.</p>
+  <a class="footer__button button button_color_white">Уже скоро!</a>
+</footer>
+
+<script src="scripts/slider.js"></script>
 </body>
 </html>
