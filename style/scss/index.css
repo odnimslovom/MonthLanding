@@ -320,7 +320,7 @@ summary {
 .button_type_dot:hover {
   cursor: pointer;
 }
-.button_type_dot-active {
+.button_active {
   background: #212121;
 }
 
@@ -496,7 +496,7 @@ summary {
 }
 .header__subtitle:after {
   content: "";
-  background-image: url(./../../../images/header/header.png);
+  background-image: url(./../../images/header/header.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -783,7 +783,7 @@ summary {
     top: -28px;
     right: 70px;
     content: "";
-    background-image: url(./../../../images/footer/footer.png);
+    background-image: url(./../../images/footer/footer.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

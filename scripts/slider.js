@@ -12,8 +12,8 @@ function initSlider(slider) {
 
   function showBlock(index) {
     sliderBlocks.forEach( sliderBlock => sliderBlock.classList.remove('slider__block_active'));
-    sliderDots.forEach(sliderDot => sliderDot.classList.remove('button_type_dot-active'));
+    sliderDots.forEach(sliderDot => sliderDot.classList.remove('button_active'));
     sliderBlocks[index].classList.add('slider__block_active');
-    sliderDots[index].classList.add('button_type_dot-active');
+    sliderDots[index].classList.add('button_active');
   }
 }

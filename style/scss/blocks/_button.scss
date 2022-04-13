@@ -33,6 +33,8 @@
     }
   }
 
+
+
   &_type_dot {
     display: block;
     width: 4px;
@@ -48,9 +50,9 @@
     &:hover {
       cursor: pointer;
     }
+  }
 
-    &-active {
-      background: $slider-active-dot-color;
-    }
+  &_active {
+    background: $slider-active-dot-color;
   }
 }
